@@ -1,0 +1,58 @@
+﻿@model Lab4_Grupo2.Models.Paciente
+
+@{
+    ViewData["Title"] = "Información paciente | HNGT";
+}
+
+<body>
+    <div style="padding-left:50px; padding-right:50px;">
+        <br />
+        <h4>Expediente paciente actual</h4>
+
+        <div>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Nombres)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Nombres)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Apellidos)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Apellidos)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.FDNacimiento)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.FDNacimiento)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Sexo)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Sexo)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Especializacion)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Especializacion)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.MIngreso)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.MIngreso)
+                </dd>
+            </dl>
+        </div>
+        <div>
+
+            <a asp-action="Index">Volver a sala</a>
+        </div>
+        </div>
+</body>
